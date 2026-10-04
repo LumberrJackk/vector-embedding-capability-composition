@@ -21,9 +21,7 @@ from capability_embedding import (
 )
 
 
-# ---------------------------------------------------------
 # Load dataset
-# ---------------------------------------------------------
 
 dataset_path = os.path.join(os.path.dirname(__file__), "capability_dataset.json")
 
@@ -31,9 +29,7 @@ with open(dataset_path, "r") as file:
     dataset = json.load(file)
 
 
-# ---------------------------------------------------------
 # Convert JSON data into Capability objects
-# ---------------------------------------------------------
 
 capabilities = {}
 
@@ -55,9 +51,7 @@ for name, data in dataset["capabilities"].items():
     )
 
 
-# ---------------------------------------------------------
 # Experiment 1: Capability representation
-# ---------------------------------------------------------
 
 print("\n" + "=" * 60)
 print("EXPERIMENT 1: CAPABILITY REPRESENTATION")
@@ -79,10 +73,7 @@ for name in [
         np.count_nonzero(vector)
     )
 
-
-# ---------------------------------------------------------
 # Experiment 2: Capability compatibility
-# ---------------------------------------------------------
 
 print("\n" + "=" * 60)
 print("EXPERIMENT 2: CAPABILITY COMPATIBILITY")
@@ -112,9 +103,7 @@ for first_name, second_name in pairs:
     )
 
 
-# ---------------------------------------------------------
 # Experiment 3: Similarity
-# ---------------------------------------------------------
 
 print("\n" + "=" * 60)
 print("EXPERIMENT 3: VECTOR SIMILARITY")
@@ -155,9 +144,7 @@ print(
 )
 
 
-# ---------------------------------------------------------
 # Experiment 4: Alternative implementations
-# ---------------------------------------------------------
 
 print("\n" + "=" * 60)
 print("EXPERIMENT 4: ALTERNATIVE IMPLEMENTATIONS")
@@ -190,10 +177,7 @@ print(
     round(similarity(database_vector, gui_vector), 3)
 )
 
-
-# ---------------------------------------------------------
 # Experiment 5: Irrelevant capabilities
-# ---------------------------------------------------------
 
 print("\n" + "=" * 60)
 print("EXPERIMENT 5: IRRELEVANT CAPABILITY")
@@ -233,10 +217,7 @@ print(
     )
 )
 
-
-# ---------------------------------------------------------
 # Experiment 6: Composition
-# ---------------------------------------------------------
 
 print("\n" + "=" * 60)
 print("EXPERIMENT 6: CAPABILITY COMPOSITION")
@@ -302,9 +283,7 @@ print(
 )
 
 
-# ---------------------------------------------------------
 # Experiment 7: Operational properties
-# ---------------------------------------------------------
 
 print("\n" + "=" * 60)
 print("EXPERIMENT 7: OPERATIONAL ATTRIBUTES")
@@ -332,9 +311,7 @@ for name in [
     )
 
 
-# ---------------------------------------------------------
 # State encoding
-# ---------------------------------------------------------
 
 print("\n" + "=" * 60)
 print("STATE AND GOAL ENCODING")

@@ -4,8 +4,10 @@
 
 ### Student Details
 
-Name: ** SIVANANDHA K **
-Register Number: ** TCR24CS064 **
+Name: **SIVANANDHA K**
+
+Register Number: **TCR24CS064**
+
 Course: Machine Learning
 
 ---
